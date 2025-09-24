@@ -1,0 +1,18 @@
+[project]
+name = "sphinx-preview"
+dynamic = ["version", "description"]
+requires-python = "~=3.13.0"
+dependencies = [
+    "sphinx==8.2.3",
+    "strip-ansi==0.1.1",
+]
+
+[dependency-groups]
+dev = [
+    "dir-content-diff==1.12.1",
+    "pytest==8.4.1",
+]
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
